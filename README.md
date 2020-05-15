@@ -22,3 +22,12 @@ This repository is currently under development. To do a developmental install, d
 `pip install -e .`
 
 in the repository directory.
+
+
+Features should be developed on branches. To create and switch to a branch, use the command
+
+`git checkout -b new_branch_name`
+
+To switch to an existing branch, use
+
+`git checkout new_branch_name`
