@@ -1,0 +1,7 @@
+Now i am creating a file that has errors in it
+
+error
+
+
+more lines
+
