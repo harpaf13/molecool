@@ -7,7 +7,7 @@ Handles input and output of pdb files
 import os
 import numpy as np
 
-def open_pdb(f_loc):
+def open_pdb(file_location):
     # This function reads in a pdb file and returns the atom names and coordinates.
     with open(file_location) as f:
         data = f.readlines()
