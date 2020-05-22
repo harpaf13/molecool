@@ -11,8 +11,13 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
-    
-    # Draw a picture of a molecule using matplotlib.
+    """ 
+    Draw a picture of a molecule using matplotlib.
+    """
+
+    # First check that we have the same numbers of coords and symbols
+    if len(coordinates) != len(symbols):
+        raise Exception("Not the same length of coordinates and symbols")
     
     # Create figure
     fig = plt.figure()
