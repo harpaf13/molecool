@@ -32,7 +32,7 @@ def calculate_distance(rA, rB):
         raise TypeError("rA and rB must be numpy arrays")
     dist_vec = (rA - rB)
     distance = np.linalg.norm(dist_vec)
-    if distance == 0.0:
+    if distance <= 1E-10:
         raise Exception("Two atoms are located in the same point in space")
     return distance
 
