@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from mpl_toolkits.mplot3d import Axes3D
+from .atom_data import atom_colors, atomic_weights
 
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
     """ 
